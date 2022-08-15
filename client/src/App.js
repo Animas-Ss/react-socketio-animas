@@ -3,7 +3,8 @@ import io from 'socket.io-client';
 import { useState, useEffect } from 'react';
 
 
-const socket = io('http://localhost:4000');
+//const socket = io('http://localhost:4000'); como ya el pueto nos lo da nuestro host ya no es necesario aclarar el puerto colocando la funcion vacia tomaria el puerto asignado por el servidor 
+const socket = io();
 
 function App() {
 

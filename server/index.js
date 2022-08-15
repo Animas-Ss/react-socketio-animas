@@ -23,7 +23,7 @@ const server = http.createServer(app);
 // utilizamos el metodo servidor de socket.io al cual le pasamos el servidor convertido con http
 const io = new Socketserver(server,{
     cors:{
-        origin: 'http://localhost:3000',
+        //origin: 'http://localhost:3000', comentamos por que esto es para desarollo en produccion el puerto lo sirve nuestro host
     }
 });
 
